@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    scroll-behavior: smooth;
+    opacity: 1;
+    background: linear-gradient( 135deg, rgba(0, 64, 77, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+    /*background-image: url(assets/images/plane.png);*/
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+#checkbox{
+    display: none;
+}
+label #menu{
+color: white;
+cursor: pointer;
+position: fixed;
+z-index: 999;
+left: 20px;
+top: 20px;
+
+}
+label #menu:hover {
+    color: greenyellow;
+    font-size: 2rem;
+  }
+#checkbox:checked ~ .side-nav {
+  left: 0px;
+}
+.side-nav{
+background: rgb(22, 22,78);
+position: fixed;
+width: 200px;
+height: 100%;
+z-index: 1;
+text-align: center;
+left: -200px;
+transition: all 0.5s ease-in ;
+top: 0;
+padding-top: 70px;
+}
+.nav-profile{
+    border-radius: 50%;
+}
+.side-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+.side-nav ul a{
+    display: flex;
+    color: white;
+    padding: 30px 0px 0px 25px ;
+}
+.side-nav ul i{
+    margin-right: 9px;
+
+}
+.side-nav ul li:hover{
+    color: yellow;
+    padding-left: 35px;
+}
+
+.intro{
+    background: linear-gradient( 135deg, rgba(0, 64, 77, 0.9) 0%, rgba(0, 0, 0, 0.8) 100% , rgba(79, 45, 0, 0.8) 100%);
+    height: 400px;
+    margin-top: -400px;
+    color: white;
+    text-align: center;
+}
+#typing{
+    color: rgba(249, 105, 14, 1);
+}
+
+#canvas{
+    z-index: -1;
+    width: 100%;
+}
+.intro-button-box{
+    text-align: center;
+    margin-top: 50px;
+}
+.intro-button{
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #03e9f4;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.intro-button1:hover{
+    background: #03e9f4;
+    color: #050801;
+    text-decoration: none;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+.intro-button1 span{
+    position: absolute;
+    display: block;
+}
+.intro-button1 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+0%
+{
+    left: -100%;
+}
+50%,100%{
+    left: 100%;
+}
+}
+.intro-button1 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+0%
+{
+    top: -100%;
+}
+50%,100%{
+    top: 100%;
+}
+}
+.intro-button1 span:nth-child(3){
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+0%
+{
+    right: -100%;
+}
+50%,100%{
+    right: 100%;
+}
+}
+.intro-button1 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+0%
+{
+    bottom: -100%;
+}
+50%,100%{
+    bottom: 100%;
+}
+}
+.intro-button2:hover{
+    background: #f40317;
+    color: #050801;
+    text-decoration: none;
+    color: aliceblue;
+    box-shadow: 0 0 5px #f40317,
+                0 0 25px #f40317,
+                0 0 50px #f40317,
+                0 0 200px #f40317;
+}
+.intro-button span{
+    position: absolute;
+    display: block;
+}
+.intro-button2 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f40317);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+0%
+{
+    left: -100%;
+}
+50%,100%{
+    left: 100%;
+}
+}
+.intro-button2 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f40317);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+0%
+{
+    top: -100%;
+}
+50%,100%{
+    top: 100%;
+}
+}
+.intro-button2 span:nth-child(3){
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f40317);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+0%
+{
+    right: -100%;
+}
+50%,100%{
+    right: 100%;
+}
+}
+.intro-button2 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f40317);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+0%
+{
+    bottom: -100%;
+}
+50%,100%{
+    bottom: 100%;
+}
+}
+/* About Section*/
+#about{
+    padding-top: 100px;
+    transition-duration: 5s;
+}
+.about-list li{
+    margin-top: 10px;
+}
+.box-card{
+    transform: skewY(-10deg);
+    margin-top: 50px;
+}
+.card{
+    background: #000;
+    position: relative;
+    transition: 0.5s;
+}
+.card ::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #00c8f6;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+.card ::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+    background: #00c8f6;
+    transform-origin: left;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    border-bottom: 100% solid #d9d9d9;
+}
+.card:hover{
+    transform: translateY(-40px)
+}
+.head-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content{
+    padding: 20px;
+text-align: start;
+
+}
+
+/* Resume Section Start*/
+.resume-card{
+    background: #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+/* Project Section start */
+
+
+/* footer*/
+.footer-sec ul li a{
+    display: inline-block;
+    margin:10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-sec ul li a:hover{
+    background: #000;
+}
+.social-media ul li a{
+    display: inline-block;
+    margin:15px;
+    font-size: 18px;
+}
+.social-media ul li a:hover{
+    color: rgb(247, 149, 3);
+}
