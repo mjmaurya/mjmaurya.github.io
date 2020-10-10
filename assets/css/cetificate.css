@@ -57,7 +57,7 @@ box-shadow: 0 0 5px rgb(243, 236, 236), 2px 2px 5px rgb(250, 245, 245),2px 2px 5
 }
 .verify-btn{
     background:rgb(27, 25, 25);
-    width:100px;
+    padding: 0px 5px 0px 5px;
     color:#fff;
     font-weight: bold;
 }
