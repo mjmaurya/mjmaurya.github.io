@@ -14,11 +14,84 @@ body{
 
 
 }
+#particles-js{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-8;
+    background-color: rgb(8, 6, 17); /* this was my color */
+    left: 0px;
+    top: 0px;
+}
+#particles-cs{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-7;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
+#particles-as{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-6;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
+#particles-bs{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-5;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
+#particles-ss{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-4;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
+#particles-ps{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-3;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
+#particles-ws{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-2;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
 
+#particles-s{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    background-color: transparent; /* this was my color */
+    left: 0px;
+    top: 0px;
+}
 .intro{
-    background: linear-gradient( 135deg, rgba(0, 64, 77, 0.9) 0%, rgba(0, 0, 0, 0.8) 100% , rgba(79, 45, 0, 0.8) 100%);
+    padding-top: 10px;
+    background: linear-gradient( 135deg, rgba(0, 64, 77, 0.9) 0%, rgba(0, 64, 77, 0.9) 100% , rgba(0, 64, 77, 0.9) 100%);
     height: 400px;
-    margin-top: -400px;
+    margin-top: 100px;
     color: white;
     text-align: center;
 }
