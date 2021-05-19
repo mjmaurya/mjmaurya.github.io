@@ -1,5 +1,5 @@
 
-var typeString=["I'M a web Developer","I'M an Android Developer","Machine Learning Enthusiast"];
+var typeString=["I'M a Full Stack Developer"];
 var i=0;
 var count=0;
 var selectedText="";
