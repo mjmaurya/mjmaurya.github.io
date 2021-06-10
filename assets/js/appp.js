@@ -35,7 +35,7 @@ particlesJS('particles-ps',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/php.png",
+          "src": "img/react.png",
           "width": 100,
           "height": 100
         }

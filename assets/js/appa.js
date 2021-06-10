@@ -35,7 +35,7 @@ particlesJS('particles-as',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/android.png",
+          "src": "img/mongo.png",
           "width": 100,
           "height": 100
         }

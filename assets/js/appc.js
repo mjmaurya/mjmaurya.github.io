@@ -35,7 +35,7 @@ particlesJS('particles-cs',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/code.png",
+          "src": "img/django.png",
           "width": 100,
           "height": 100
         }

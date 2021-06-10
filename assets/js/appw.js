@@ -35,7 +35,7 @@ particlesJS('particles-ws',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/wordpress.png",
+          "src": "img/node.png",
           "width": 100,
           "height": 100
         }

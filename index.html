@@ -112,58 +112,17 @@
         </div>
         <div class="container" style="padding-top: 60px; text-align: start;">
             <h1>What I'm Doing</h1>
-            <div class="row" style="padding-top: 60px; ">
-                <div class="col-sm-4 ">
-                  <div class="box-card">
-                    <div class="card">
-                        <div class="head-icon" style="text-align: start;">
-                            <i class="material-icons">format_shapes</i>
-                            <h4>Machine Learning</h4>
-                        </div> 
-                        <div class="content">
-                            <p>Machine Learning is one of the most demandable technology so i have started to learn Machine Learning.</p>
-                        </div>  
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="box-card">
-                    <div class="card">
-                        <div class="head-icon">
-                            <i class="material-icons">favorite</i>
-                            <h4>Django ( Python )</h4>
-                        </div> 
-                        <div class="content">
-                            <p>python is the powerfull language and i love with python, so i learn every framworks of python , Django is one of them.</p>
-                        </div>  
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="box-card">
-                    <div class="card">
-                        <div class="head-icon">
-                            <i class="large material-icons">code</i>
-                            <h4>Coding Contest</h4>
-                        </div> 
-                        <div class="content">
-<p>
-    I love to code, so i practice on various coding platform and improve my coding skill for further used
-</p>                        </div>  
-                    </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="row">
                 <div class="col-sm-4 ">
                     <div class="box-card">
                     <div class="card">
                         <div class="head-icon">
                             <i class="material-icons">laptop</i>
-                            <h4>Web Development</h4>
+                            <h4>Full Stack Development</h4>
                         </div> 
                         <div class="content">
-                            <p>I love to design and develop Website. The technology i use to develop is Html,css,JavaScript,Django,PHP.</p>
+                            <p>I love to design and develop Web Aps. The technology i use to develop is Html,css,JavaScript,Django,React and NodeJS.</p>
                         </div>  
                     </div>
                     </div>
@@ -172,11 +131,11 @@
                     <div class="box-card">
                     <div class="card">
                         <div class="head-icon">
-                            <i class="material-icons">android</i>
-                            <h4>Android Development</h4>
+                            <i class="material-icons">code</i>
+                            <h4>Coding Contest</h4>
                         </div> 
                         <div class="content">
-                            <p>I develop android app using Java, XML, APIs , Firebase, Sqlite etc.Certified Android Developer (Udacity)</p>
+                            <p> love to code, so i practice on various coding platform and improve my coding skill for further used</p>
                         </div>  
                     </div>
                     </div>
@@ -361,10 +320,10 @@
                             </ul>
                         </div>
                         <div class="row" style="border-bottom: 2px solid aqua;">
-                            <h5 class="col-6"> PHP</h5>
+                            <h5 class="col-6"> Database</h5>
                             <ul class="col-6" style="text-align: end;">
                                 <li>
-                                    CodeIgniter
+                                    MySQL,MongooDB
                                 </li>
                             </ul>
                         </div>
@@ -379,7 +338,7 @@
     <div style="text-align: center;">
         <h1 style="margin-bottom: 20px;">My Recent Projects</h1>
         <hr class="mt-2 mb-3"/>
-        <p>I am 3rd Year Computer Science And Engineering Student. You can find me more on Stackoverflow, Github, Linkedin than in the real world.</p>
+        <p>I am Final Year Computer Science And Engineering Student. You can find me more on Stackoverflow, Github, Linkedin than in the real world.</p>
     </div>
 <div class="row">
     <div class="col-sm-6" style="margin-top: 50px;">
@@ -528,35 +487,39 @@
         <h5></h5>
     </div>
 <div class="row" style="text-align: center; margin: 40px 0 80px 0;">
-    <div class="col-sm-4" style="margin-top:20px ;">
-<div>
-    <i class="large material-icons">local_phone</i>
-</div>
-<div>
-    <h5>Call me On</h5>
-    <h6>Not Available</h6>
-</div>
-    </div>
-    <div class="col-sm-4" style="margin-top:20px ;">
-        <div>
-            <i class="large material-icons">location_on</i>
-        </div>
-        <div>
-            <h5>Visite Here</h5>
-            <h6>Bakhtiyarpur College of Engineering</h6>
-        </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <form id="contact-form" name="myForm" class="form" action="https://formspree.io/f/mdoyezgr"  method="POST" role="form">
+
+            <div class="form-group">
+                <label class="form-label" id="nameLabel" for="name"></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
             </div>
-            <div class="col-sm-4" style="margin-top:20px ;">
-                <div>
-                    <i class="large material-icons">email</i>
-                </div>
-                <div>
-                    <h5>Email me On</h5>
-                    <h6>manojbce@outlook.com</h6>
-                </div>
+
+            <div class="form-group">
+                <label class="form-label" id="emailLabel" for="email"></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
             </div>
+
+            <div class="form-group">
+                <label class="form-label" id="subjectLabel" for="sublect"></label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" id="messageLabel" for="message"></label>
+                <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your message" tabindex="4" required></textarea>                                 
+            </div>
+
+            <div class="text-center margin-top-25">
+                <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
+            </div>
+
+        </form><!-- End form -->
+      
+    </div><!-- End col -->
     </div>
-    
+
     </div>
 <!--Contact End-->
 <footer class="container" style="text-align: center;">
@@ -575,7 +538,7 @@
 </ul>
 <div>
     <p> <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-        With &#10084;&#65039; by Manoj Kumar  2020
+        With &#10084;&#65039; by Manoj Kumar  2021
 
        <br> Built with HTML, CSS ,BootStrap and JavaScript</p>
 </div>
