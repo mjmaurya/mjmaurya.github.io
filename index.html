@@ -17,6 +17,27 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
     <link rel="manifest" href="assets/ico/site.webmanifest">
+    <link href="http://fonts.cdnfonts.com/css/radioland" rel="stylesheet">
+    <style>
+    #cursor {
+      display: inline-block;
+      width: 2px;
+      height: 42px;
+      color: #fff;
+      background-color: white;
+      margin-left: 8px;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  #cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
+    </style>
     </head>
     <body>
      <header>
@@ -64,7 +85,7 @@
                 </ul>
                 <h4>Manoj Kumar</h4>
     
-                <h4 style="color: aqua; margin-top: 50px; font-family: 'Press Start 2P', cursive; font-size: 2.5em;">{ <span id="typing"></span> }</h4>
+                <h4 style="color: aqua; margin-top: 50px; font-family: 'Radioland', sans-serif; font-size: 2.5em;"><span id="typing"></span><span id="cursor"></span></h4>
                <div class="intro-button-box">
                 <a class="intro-button intro-button1" href="https://docs.google.com/uc?export=download&id=12qjd6yi3jz24mnFvPxnruml6e0qlFTyK">
                     <span></span>
