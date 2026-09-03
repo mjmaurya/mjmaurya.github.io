@@ -1,0 +1,26 @@
+{
+  "name": "mjmaurya-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Personal portfolio of Manoj Kumar \u2014 full-stack engineer.",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/check-placeholders.mjs && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "check": "node scripts/check-placeholders.mjs"
+  },
+  "dependencies": {
+    "motion": "^12.23.12",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@vitejs/plugin-react": "^5.0.2",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.5"
+  }
+}

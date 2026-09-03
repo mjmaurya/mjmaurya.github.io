@@ -1,15 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manoj K.</title>
-    <meta name="description" content="I am a versatile MEAN stack developer, building robust web apps from frontend to backend and deploying them to the cloud." />
-    <script type="module" crossorigin src="./assets/index-B8pzng9f.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CD3tES70.css">
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/profile.jpeg" />
+
+    <title>Manoj Kumar — Lead Engineer</title>
+    <meta
+      name="description"
+      content="Lead Engineer at UptimeAI building enterprise platforms with Node.js, TypeScript, PostgreSQL and cloud infrastructure. Author of the kt-hierarch and plotly-timezone npm packages."
+    />
+    <meta name="author" content="Manoj Kumar" />
+    <link rel="canonical" href="https://mjmaurya.github.io/" />
+    <meta name="theme-color" content="#08090b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mjmaurya.github.io/" />
+    <meta property="og:title" content="Manoj Kumar — Lead Engineer" />
+    <meta
+      property="og:description"
+      content="Lead Engineer at UptimeAI building enterprise platforms with Node.js, TypeScript, PostgreSQL and cloud infrastructure."
+    />
+    <meta property="og:image" content="https://mjmaurya.github.io/profile.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@manojkushwaha__" />
+    <meta name="twitter:title" content="Manoj Kumar — Lead Engineer" />
+    <meta
+      name="twitter:description"
+      content="Lead Engineer at UptimeAI building enterprise platforms with Node.js, TypeScript, PostgreSQL and cloud infrastructure."
+    />
+    <meta name="twitter:image" content="https://mjmaurya.github.io/profile.jpeg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Manoj Kumar",
+        "alternateName": "mjmaurya",
+        "url": "https://mjmaurya.github.io/",
+        "image": "https://mjmaurya.github.io/profile.jpeg",
+        "jobTitle": "Lead Engineer",
+        "worksFor": { "@type": "Organization", "name": "UptimeAI" },
+        "sameAs": [
+          "https://github.com/mjmaurya",
+          "https://www.linkedin.com/in/mjmaurya",
+          "https://x.com/manojkushwaha__",
+          "https://codescript.in"
+        ]
+      }
+    </script>
+
+    <script>
+      // Applied before first paint so the correct theme never flashes.
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var dark = stored ? stored === 'dark' : !window.matchMedia('(prefers-color-scheme: light)').matches
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
